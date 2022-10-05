@@ -25,3 +25,9 @@ composer require "themindoffice/formbuilder" @dev
     ->showLabel(true)
     ->html(); ?>
 ```
+
+2. Add this in your .env file with the right credentials
+```
+MAIL_FROM_ADDRESS=example@mail.com
+MAIL_FROM_NAME="Example"
+```

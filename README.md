@@ -12,6 +12,8 @@ composer require "themindoffice/formbuilder" @dev
 
 2. Copy 'vendor/themindoffice/formbuilder/src/' to 'modules/Addons'
 3. Go to your-local-domain.test/formbuilder/install
+> This function add the needed tables and components.
+4. 'modules/Addons/Formbuiler' will be deleted automatically
 
 ## Usage
 

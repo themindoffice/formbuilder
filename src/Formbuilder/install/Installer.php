@@ -26,6 +26,7 @@ class Installer
         self::tables();
         self::data();
         self::components();
+        self::destroy($_SERVER['DOCUMENT_ROOT'] . '/modules/Addons/Formbuilder');
     }
 
     public function tables()
@@ -93,7 +94,30 @@ class Installer
             $inserted_ids[$needed] = db('iris')->table('componenten')
                 ->insert($data_to_insert)
                 ->execute();
-           
+
+        }
+    }
+
+    public function destroy($dir)
+    {
+        if (is_dir($dir)) {
+
+            $objects = scandir($dir);
+
+            foreach ($objects ?? [] as $object) {
+
+                if (in_array($object, ['.', '..'])) { continue; }
+
+                if (filetype($dir . '/' . $object) == 'dir') {
+                    self::destroy($dir . '/' . $object);
+                } else {
+                    unlink($dir . '/' . $object);
+                }
+
+            }
+
+            reset($objects);
+            rmdir($dir);
         }
     }
 }

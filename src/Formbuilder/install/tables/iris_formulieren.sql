@@ -1,0 +1,25 @@
+CREATE TABLE IF NOT EXISTS `iris_formulieren`
+(
+    `id`                         int(9) unsigned NOT NULL AUTO_INCREMENT,
+    `hash`                       varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+    `naam`                       varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+    `active`                     enum('ja','nee') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'ja',
+    `onderwerpregel`             text COLLATE utf8_unicode_ci         DEFAULT NULL,
+    `tekst`                      text COLLATE utf8_unicode_ci         DEFAULT NULL,
+    `aan`                        text COLLATE utf8_unicode_ci         DEFAULT NULL,
+    `cc`                         text COLLATE utf8_unicode_ci         DEFAULT NULL,
+    `bcc`                        text COLLATE utf8_unicode_ci         DEFAULT NULL,
+    `bevestiging_onderwerpregel` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+    `bevestiging_tekst`          text COLLATE utf8_unicode_ci         DEFAULT NULL,
+    `bevestiging_versturen`      int(11) DEFAULT NULL,
+    `bevestiging_ontvanger_veld` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+    `bedankttekst`               text COLLATE utf8_unicode_ci         DEFAULT NULL,
+    `doorsturen_naar`            text COLLATE utf8_unicode_ci         DEFAULT NULL,
+    `knop_tekst`                 varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+    `addon`                      varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+    `debug`                      enum('post','cast','email') COLLATE utf8_unicode_ci DEFAULT NULL,
+    `created`                    int(11) DEFAULT NULL,
+    `modified`                   int(11) DEFAULT NULL,
+    `options`                    text COLLATE utf8_unicode_ci         DEFAULT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

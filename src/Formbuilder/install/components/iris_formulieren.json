@@ -1,0 +1,165 @@
+{
+  "domein_id": "{DOMAIN_ID}",
+  "naam": "Formulieren",
+  "table_name": "iris_formulieren",
+  "presentatie": "0",
+  "viewer": {
+    "naam": {
+      "titel": "Naam",
+      "edit": "var"
+    },
+    "iris_formulieren_velden": {
+      "titel": "Velden",
+      "component": "{PARENT_ID}",
+      "koppel": "iris_formulieren_id"
+    }
+  },
+  "editor": {
+    "naam": {
+      "titel": "Naam",
+      "edit": "var",
+      "options": {
+        "required": "nee"
+      }
+    },
+    "knop_tekst": {
+      "titel": "Knop tekst",
+      "edit": "var",
+      "options": {
+        "required": "nee"
+      }
+    },
+    "addon": {
+      "titel": "Addon",
+      "edit": "var",
+      "options": {
+        "required": "nee"
+      }
+    },
+    "debug": {
+      "titel": "Debug",
+      "edit": "rad",
+      "options": {
+        "required": "nee"
+      }
+    },
+    "e-mail": {
+      "titel": "E-mail",
+      "edit": "sep"
+    },
+    "aan": {
+      "titel": "Aan",
+      "edit": "tag",
+      "options": {
+        "required": "nee"
+      }
+    },
+    "onderwerpregel": {
+      "titel": "Onderwerpregel",
+      "edit": "var",
+      "options": {
+        "required": "nee"
+      }
+    },
+    "tekst": {
+      "titel": "Tekst",
+      "edit": "text",
+      "options": {
+        "required": "nee"
+      }
+    },
+    "cc": {
+      "titel": "CC",
+      "edit": "tag",
+      "options": {
+        "required": "nee"
+      }
+    },
+    "bcc": {
+      "titel": "BCC",
+      "edit": "tag",
+      "options": {
+        "required": "nee"
+      }
+    },
+    "bevestiging": {
+      "titel": "Bevestiging",
+      "edit": "sep"
+    },
+    "bevestiging_versturen": {
+      "titel": "Bevestiging versturen",
+      "edit": "bool",
+      "options": {
+        "required": "nee"
+      }
+    },
+    "bevestiging_onderwerpregel": {
+      "titel": "Bevestiging onderwerpregel",
+      "edit": "var",
+      "options": {
+        "required": "nee"
+      }
+    },
+    "bevestiging_ontvanger_veld": {
+      "titel": "Bevestiging ontvanger veld",
+      "edit": "sel",
+      "db_table": "iris_formulieren_velden",
+      "db_id": "id",
+      "db_column": "label",
+      "db_condition": "iris_formulieren_id = #self.id#",
+      "db_ignore_multidomain": 0,
+      "required": "nee"
+    },
+    "bevestiging_tekst": {
+      "titel": "Bevestiging tekst",
+      "edit": "text",
+      "options": {
+        "required": "nee"
+      }
+    },
+    "na-verzending": {
+      "titel": "Na verzending",
+      "edit": "sep"
+    },
+    "": {
+      "titel": null,
+      "edit": "inst",
+      "content": "'Bedankttekst' verschijnt als succes-melding en 'Doorsturen naar' stuurt de bezoeker door naar de pagina \/ URL die je selecteert."
+    },
+    "bedankttekst": {
+      "titel": "Bedankttekst",
+      "edit": "var",
+      "options": {
+        "required": "nee"
+      }
+    },
+    "doorsturen_naar": {
+      "titel": "Doorsturen naar",
+      "edit": "url",
+      "options": {
+        "required": "nee"
+      }
+    }
+  },
+  "settings": {
+    "settings": {
+      "sorteerbaar": "nee",
+      "seo": "nee",
+      "stats": "nee"
+    },
+    "options": {
+      "seo": {
+        "url": {
+          "required": "1",
+          "prefix": null
+        }
+      },
+      "order": {
+        "column": "id",
+        "direction": "asc"
+      },
+      "add_at": "bottom"
+    }
+  },
+  "template": "detail_iris_formulieren"
+}

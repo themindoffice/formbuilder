@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS `iris_formulieren_velden` (
+   `id` int(9) unsigned NOT NULL AUTO_INCREMENT,
+   `hash` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+   `label` text COLLATE utf8_unicode_ci DEFAULT NULL,
+   `name` text COLLATE utf8_unicode_ci DEFAULT NULL,
+   `placeholder` text COLLATE utf8_unicode_ci DEFAULT NULL,
+   `type` enum('tekstregel','tekstveld','bestand','bestanden','nummer','dropdown','checkboxen','vinkje') COLLATE utf8_unicode_ci DEFAULT NULL,
+   `keuzes` text COLLATE utf8_unicode_ci DEFAULT NULL,
+   `columns` int(11) DEFAULT NULL,
+   `iris_formulieren_id` int(11) DEFAULT NULL,
+   `verplicht` int(11) DEFAULT NULL,
+   `validatie` enum('varchar','number','email','telefoon') COLLATE utf8_unicode_ci DEFAULT NULL,
+   `aangepaste_foutmelding` text COLLATE utf8_unicode_ci DEFAULT NULL,
+   `input_class` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+   `modified` int(11) DEFAULT NULL,
+   `created` int(11) DEFAULT NULL,
+   `options` text COLLATE utf8_unicode_ci DEFAULT NULL,
+   `volgorde` int(11) DEFAULT NULL,
+   PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci

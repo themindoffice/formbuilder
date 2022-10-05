@@ -1,0 +1,47 @@
+{
+	"name": "themindoffice/formbuilder",
+	"description": "Add formbuilder addon to Iris",
+	"license": "MIT",
+	"type": "library",
+	"version": "1.0.0",
+	"authors": [{
+		"name": "The MindOffice",
+		"email": "development@themindoffice.nl"
+	}],
+	"require": {
+		"slowprog/composer-copy-file": "~0.3"
+	},
+	"require-dev": {
+		"slowprog/composer-copy-file": "~0.3"
+	},
+	"autoload": {
+		"psr-4": {
+			"Modules\\Addons\\Formbuilder\\": "src/Formbuilder"
+		}
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"@copy"
+		],
+		"post-update-cmd": [
+			"@copy"
+		],
+		"post-root-package-install": [
+			"@copy"
+		],
+		"post-create-project-cmd": [
+			"@copy"
+		],
+		"copy": [
+			"SlowProg\\CopyFile\\ScriptHandler::copy"
+		]
+	},
+	"extra": {
+		"copy-file": {
+			"vendor/themindoffice/formbuilder/src": "modules/Addons"
+		},
+		"copy-file-dev": {
+			"vendor/themindoffice/formbuilder/src": "modules/Addons"
+		}
+	}
+}

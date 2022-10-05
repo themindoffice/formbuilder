@@ -1,0 +1,118 @@
+{
+  "domein_id": "{DOMAIN_ID}",
+  "naam": "Formulieren velden",
+  "table_name": "iris_formulieren_velden",
+  "presentatie": "0",
+  "viewer": {
+    "label": {
+      "titel": "Label",
+      "edit": "var"
+    },
+    "type": {
+      "titel": "Type",
+      "edit": "var"
+    },
+    "validatie": {
+      "titel": "Validatie",
+      "edit": "var"
+    }
+  },
+  "editor": {
+    "hash": {
+      "titel": "Hash",
+      "edit": "readonly",
+      "options": {
+        "required": "nee"
+      }
+    },
+    "label": {
+      "titel": "Label",
+      "edit": "var",
+      "options": {
+        "required": "nee"
+      }
+    },
+    "placeholder": {
+      "titel": "Placeholder \/ Tekst naast vinkje",
+      "edit": "var",
+      "options": {
+        "required": "nee"
+      }
+    },
+    "type": {
+      "titel": "Type",
+      "edit": "rad",
+      "options": {
+        "required": "1"
+      }
+    },
+    "select": {
+      "titel": "Select",
+      "edit": "sep"
+    },
+    "keuzes": {
+      "titel": "Keuzes",
+      "edit": "textarea",
+      "options": {
+        "required": "nee"
+      }
+    },
+    "controle": {
+      "titel": "Controle",
+      "edit": "sep"
+    },
+    "validatie": {
+      "titel": "Validatie",
+      "edit": "rad",
+      "options": {
+        "required": "nee"
+      }
+    },
+    "aangepaste_foutmelding": {
+      "titel": "Aangepaste foutmelding",
+      "edit": "var",
+      "options": {
+        "required": "nee"
+      }
+    },
+    "styling": {
+      "titel": "Styling",
+      "edit": "sep"
+    },
+    "columns": {
+      "titel": "Columns",
+      "edit": "number",
+      "options": {
+        "required": "nee"
+      }
+    },
+    "input_class": {
+      "titel": "Input class",
+      "edit": "var",
+      "options": {
+        "required": "nee"
+      }
+    }
+  },
+  "settings": {
+    "settings": {
+      "sorteerbaar": "ja",
+      "seo": "nee",
+      "stats": "nee"
+    },
+    "options": {
+      "seo": {
+        "url": {
+          "required": "1",
+          "prefix": null
+        }
+      },
+      "order": {
+        "column": "id",
+        "direction": "asc"
+      },
+      "add_at": "bottom"
+    }
+  },
+  "template": "detail_iris_nieuwsbrieven_velden"
+}

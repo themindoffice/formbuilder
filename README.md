@@ -26,7 +26,7 @@ composer require "themindoffice/formbuilder" @dev
     ->html(); ?>
 ```
 
-2. Add this in your .env file with the right credentials
+2. Add this in your .env file with the right credentials. Make sure the domain is whitelisted at Mandrill.
 ```
 MAIL_FROM_ADDRESS=example@mail.com
 MAIL_FROM_NAME="Example"

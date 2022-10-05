@@ -2,7 +2,7 @@
 
 require_once 'Installer.php';
 
-use Modules\Addons\Newsletter\Install\Installer;
+use Modules\Addons\Formbuilder\Install\Installer;
 
 $installer = new Installer();
 

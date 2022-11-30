@@ -26,7 +26,7 @@ class Installer
         self::tables();
         self::data();
         self::components();
-        self::destroy($_SERVER['DOCUMENT_ROOT'] . '/modules/Addons/Formbuilder');
+        self::destroy($_SERVER['DOCUMENT_ROOT'] . '/modules/Addons/Formbuilder/install');
     }
 
     public function tables()
